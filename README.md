@@ -16,17 +16,17 @@ Los profesores piensan inmediatamente: "Cogerán la oferta 3x1, de forma que sol
 
 Cuando los profesores salen de su asombro, deciden que lo más sensato es utilizar el hecho de que las empanadas se pueden pedir mitad de un tipo y mitad de otro, pagando por ella la media del costo de las dos empanadas enteras. Así, una empanada mitad pollo y mitad vegetariana valdrá (12 + 16)/2 = 14 euros. Sin embargo, no logran decidir cuál es la mejor forma de repartir las empanadas en mitades primero, y en grupos después, para minimizar el precio.
 
-Ayúdales haciendo un programa que lo calcule lo más rápido posible: hay decenas de estudiantes hambrientos que dependen de ti.
+Ayúdales haciendo una función que lo calcule lo más rápido posible: hay decenas de estudiantes hambrientos que dependen de ti.
 
 Las empanadas que han elegido los profesores tienen 3, 4 o 5 ingredientes. La masa de una empanada vale 6 euros, y cada ingrediente adicional vale 2 euros. Así, las empanadas pueden valer 12, 14 o 16 euros. Se garantiza que el número total de empanadas será múltiplo de 3.
 
 ## Entrada
 
-Cada entrada consta de tres enteros, a b c, que son el número de empanadas de 3, 4 y 5 ingredientes, respectivamente. Se garantiza que el número de empanadas, a + b + c, cumple que a + b + c < 40. Además, el número de empanadas es divisible entre 3.
+La función debe tener tres parámetros de entrada. Cada conjunto de entrada consta de tres enteros, a b c, que son el número de empanadas de 3, 4 y 5 ingredientes, respectivamente. Se garantiza que el número de empanadas, a + b + c, cumple que a + b + c < 40. Además, el número de empanadas es divisible entre 3.
 
 ## Salida
 
-Por cada conjunto de entrada, imprimir un único entero: la mínima cantidad de euros que se puede pagar para llevarse todas las empanadas.
+Por cada conjunto de entrada, retornar un único entero: la mínima cantidad de euros que se puede pagar para llevarse todas las empanadas.
 
 ## Ejemplos de casos de uso
 
@@ -47,7 +47,7 @@ Por cada conjunto de entrada, imprimir un único entero: la mínima cantidad de 
     npm install
     ```
 
-4. Completar los argumentos y el cuerpo de la función `fn` en el archivo (`main.js`)
+4. Completar los argumentos y el cuerpo de la función `fn` en el archivo (`main.js`). No se debe renombrar la función `fn`.
 
     ```javascript
     // main.js
@@ -56,16 +56,15 @@ Por cada conjunto de entrada, imprimir un único entero: la mínima cantidad de 
     };
     ```
 
-
-
 4. Ejecutar los test:
     ```bash
     npm run test
     ```
 
 ## Evaluación
+
 ### Mínimo
-Para el APTO se deben pasar todos los test excepto los de validaciones de error en la entrada de datos
+Para el APTO se deben pasar todos los test excepto los de validaciones de errores en la entrada de datos
 
 ### Extra
 Pasar los test de validación de errores en la entrada de datos (Throws error)
