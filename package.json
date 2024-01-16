@@ -1,0 +1,16 @@
+{
+  "name": "combustible",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "combustible.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vitest": "^1.0.4"
+  }
+}
