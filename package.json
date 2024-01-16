@@ -1,14 +1,20 @@
 {
-  "name": "combustible",
+  "name": "empanadas-challenge",
   "version": "1.0.0",
   "type": "module",
-  "description": "",
-  "main": "combustible.js",
+  "description": "Desafío de programación para resolver un problema de optimización para minimizar el gasto al comprar empanadas. Se incluye una descripción detallada del problema y se proporcionan casos de prueba.",
+  "main": "main.js",
   "scripts": {
     "test": "vitest"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "javascript",
+    "challenge",
+    "exercise",
+    "programación",
+    "testing"
+  ],
+  "author": "Fidel Gilart",
   "license": "ISC",
   "devDependencies": {
     "vitest": "^1.0.4"
