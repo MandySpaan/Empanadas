@@ -69,7 +69,7 @@ Para el APTO se deben pasar todos los test excepto los de validaciones de errore
 ### Extra
 Pasar los test de validación de errores en la entrada de datos (Throws error)
 
-### Ejemplo de ejecución de los test
+### Ejemplo de ejecución de algunos test
 
 ```bash
 ✓ main.test.js (7)
