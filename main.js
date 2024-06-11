@@ -20,4 +20,14 @@ export const fn = (a, b, c) => {
     return;
   }
   console.log("Just checking");
+  let i = a + b + c;
+  do {
+    console.log(`Does this work? ${i}`);
+    //add code here that does:
+    // var new price = ((most expensive / 2) + (cheapest left / 2))
+    // 2 empanadas have to be added with the new price
+    // and the most expensive and cheapest have to be removed
+
+    i -= 2;
+  } while (i / 2 >= 0.5);
 };
