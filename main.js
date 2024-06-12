@@ -21,13 +21,13 @@ export const fn = (a, b, c) => {
   }
   console.log("Just checking");
   let i = a + b + c;
-  do {
-    console.log(`Does this work? ${i}`);
+  while (i / 2 >= 1) {
     //add code here that does:
     // var new price = ((most expensive / 2) + (cheapest left / 2))
-    // 2 empanadas have to be added with the new price
+    // 2 empanadas have to be added with this new price
     // and the most expensive and cheapest have to be removed
-
     i -= 2;
-  } while (i / 2 >= 0.5);
+    console.log(`empanadas left to combine: ${i}`);
+    //if(i === 1) {add last i price to total}
+  }
 };
