@@ -4,20 +4,13 @@ export const fn = (a, b, c) => {
     return;
   }
   if (a < 0 || b < 0 || c < 0) {
-    console.log("Throw error on negative input value");
-    return;
+    throw new Error("The input value cannot be negative");
   }
   if ((a + b + c) % 3 !== 0) {
-    console.log(
-      "Throws error when the total sum of inputs is not a multiple of 3"
-    );
-    return;
+    throw new Error("The total sum of inputs has to be a multiple of 3");
   }
   if (a + b + c >= 40) {
-    console.log(
-      "Throws error when the total sum of inputs is not less than 40"
-    );
-    return;
+    throw new Error("The total sum of the inputs has to be less than 40");
   }
   console.log("Turn parameters into an array of individual prices:");
 
