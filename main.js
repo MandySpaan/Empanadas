@@ -19,7 +19,7 @@ export const fn = (a, b, c) => {
     );
     return;
   }
-  // console.log("Turn parameters into an array of individual prices:");
+  console.log("Turn parameters into an array of individual prices:");
 
   let arrayEmpanadas = [];
   while (a > 0) {
@@ -37,12 +37,11 @@ export const fn = (a, b, c) => {
     c -= 1;
   }
 
-  // console.log(arrayEmpanadas);
-  // console.log(
-  //   "Individual prices combined to get to cheapest prices per empanada"
-  // );
+  console.log(arrayEmpanadas);
+  console.log(
+    "Individual prices combined to get to cheapest prices per empanada"
+  );
 
-  //combine empanadas to get to the cheapest prices
   let combinedPrices = [];
 
   while (arrayEmpanadas.length / 2 >= 1) {
@@ -58,25 +57,31 @@ export const fn = (a, b, c) => {
     arrayEmpanadas.pop();
   }
 
-  // console.log(combinedPrices);
-  // console.log("array of cheapest prices from high to low");
+  console.log(combinedPrices);
+  console.log("array of cheapest prices from high to low");
   combinedPrices.sort();
   combinedPrices.reverse();
-  // console.log(combinedPrices);
+  console.log(combinedPrices);
 
-  // console.log("How many empanadas have to be paid:");
+  console.log("How many empanadas have to be paid:");
   let qtToBePaid = combinedPrices.length / 3;
-  // console.log(qtToBePaid);
+  console.log(qtToBePaid);
 
-  // console.log("The empanadas that have to be paid");
+  console.log("The empanadas that have to be paid");
   let toBePaid = combinedPrices.slice(0, qtToBePaid);
-  // console.log(toBePaid);
+  console.log(toBePaid);
 
-  // console.log("The total price is:");
+  //this is where the code has to be adjusted
+  //index 0 has to be paid, index 2 & 3 are free
+  //index 4 has to be paid, index 5 & 6 are free etc.
+
+  console.log("The total price is:");
   let totalPrice = 0;
   for (let i = 0; i < toBePaid.length; i++) {
     totalPrice += toBePaid[i];
   }
-  // console.log(totalPrice);
+  console.log(totalPrice);
   return totalPrice;
 };
+
+fn(9, 10, 11);
