@@ -65,3 +65,5 @@ export const fn = (a, b, c) => {
   combinedPrices.reverse();
   console.log(combinedPrices);
 };
+
+fn(1, 6, 2);
