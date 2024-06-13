@@ -19,8 +19,30 @@ export const fn = (a, b, c) => {
     );
     return;
   }
-  console.log("Just checking");
-  let i = a + b + c;
+  console.log("Passed all requierements");
+
+  //Turn empanadas into an array of their prices
+  let arrayEmpanadas = [];
+  while (a > 0) {
+    arrayEmpanadas.push(12);
+    a -= 1;
+  }
+
+  while (b > 0) {
+    arrayEmpanadas.push(14);
+    b -= 1;
+  }
+
+  while (c > 0) {
+    arrayEmpanadas.push(16);
+    c -= 1;
+  }
+
+  console.log(arrayEmpanadas);
+  console.log("The input of a, b, c is turned into an array");
+
+  //combine empanadas to get to the cheapest prices
+  let i = arrayEmpanadas.length;
   while (i / 2 >= 1) {
     //add code here that does:
     // var new price = ((most expensive / 2) + (cheapest left / 2))
