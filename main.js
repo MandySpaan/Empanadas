@@ -21,7 +21,6 @@ export const fn = (a, b, c) => {
   }
   // console.log("Turn parameters into an array of individual prices:");
 
-  //Turn empanadas into an array of their prices
   let arrayEmpanadas = [];
   while (a > 0) {
     arrayEmpanadas.push(12);
@@ -78,5 +77,6 @@ export const fn = (a, b, c) => {
   for (let i = 0; i < toBePaid.length; i++) {
     totalPrice += toBePaid[i];
   }
-  console.log(totalPrice);
+  // console.log(totalPrice);
+  return totalPrice;
 };
