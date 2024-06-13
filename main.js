@@ -64,6 +64,21 @@ export const fn = (a, b, c) => {
   combinedPrices.sort();
   combinedPrices.reverse();
   console.log(combinedPrices);
+
+  console.log("How many empanadas have to be paid:");
+  let qtToBePaid = combinedPrices.length / 3;
+  console.log(qtToBePaid);
+
+  console.log("The empanadas that have to be paid");
+  let toBePaid = combinedPrices.slice(0, qtToBePaid);
+  console.log(toBePaid);
+
+  console.log("The total price is:");
+  let totalPrice = 0;
+  for (let i = 0; i < toBePaid.length; i++) {
+    totalPrice += toBePaid[i];
+  }
+  console.log(totalPrice);
 };
 
 fn(1, 6, 2);
