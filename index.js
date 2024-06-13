@@ -1,3 +1,3 @@
 import { fn } from "./main.js";
 
-fn(3, 6, 3);
+fn(1, 6, 2);

@@ -19,7 +19,7 @@ export const fn = (a, b, c) => {
     );
     return;
   }
-  console.log("Passed all requierements");
+  console.log("Turn parameters into an array of individual prices:");
 
   //Turn empanadas into an array of their prices
   let arrayEmpanadas = [];
@@ -39,17 +39,29 @@ export const fn = (a, b, c) => {
   }
 
   console.log(arrayEmpanadas);
-  console.log("The input of a, b, c is turned into an array");
+  console.log(
+    "Individual prices combined to get to cheapest prices per empanada"
+  );
 
   //combine empanadas to get to the cheapest prices
-  let i = arrayEmpanadas.length;
-  while (i / 2 >= 1) {
-    //add code here that does:
-    // var new price = ((most expensive / 2) + (cheapest left / 2))
-    // 2 empanadas have to be added with this new price
-    // and the most expensive and cheapest have to be removed
-    i -= 2;
-    console.log(`empanadas left to combine: ${i}`);
-    //if(i === 1) {add last i price to total}
+  let combinedPrices = [];
+
+  while (arrayEmpanadas.length / 2 >= 1) {
+    var newPrice = (arrayEmpanadas.at(0) + arrayEmpanadas.at(-1)) / 2;
+    combinedPrices.push(newPrice, newPrice);
+    arrayEmpanadas.shift();
+    arrayEmpanadas.pop();
   }
+
+  if (arrayEmpanadas.length === 1) {
+    var newPrice = arrayEmpanadas.at(0);
+    combinedPrices.push(newPrice);
+    arrayEmpanadas.pop();
+  }
+
+  console.log(combinedPrices);
+  console.log("array of cheapest prices from high to low");
+  combinedPrices.sort();
+  combinedPrices.reverse();
+  console.log(combinedPrices);
 };
