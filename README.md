@@ -86,4 +86,10 @@ for (let i = 0; i < combinedPrices.length; i++) {
 }
 ```
 
-I started with declaring a new let <i>toBePaid</i> an empty array. Then, I wanted to select only the first of every three items (empenadas) chronologically. This is done by using an if statement inside a for loop, where <i>i</i> is used to represent the index number of <i>combinedPrices</i> . The desired selected item (empanadas) then get pushed into the new array <i>toBePaid</i>.
+I started with declaring a new let <i>toBePaid</i> an empty array. Then, I wanted to select only the first of every three items (empenadas) chronologically. This is done by using an if statement inside the for loop, where <i>i</i> is used to represent the index number of <i>combinedPrices</i> . The desired selected item (empanadas) then get pushed into the new array <i>toBePaid</i>.
+
+## Points of Improvement 💡
+
+- The current code can be studied more closely to possibly shorten at some parts.
+- There could possibly be thought of another solution to the same problem that might use less code.
+- The several console logs inside the function are not necessary and solely there for clarification of how the code comes to the final result. These console logs could possibly be removed.
