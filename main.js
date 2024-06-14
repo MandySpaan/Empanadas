@@ -1,8 +1,4 @@
 export const fn = (a, b, c) => {
-  if (isNaN(a) || isNaN(b) || isNaN(c)) {
-    console.log("Please enter valid numbers");
-    return;
-  }
   if (a < 0 || b < 0 || c < 0) {
     throw new Error("The input value cannot be negative");
   }
@@ -74,3 +70,5 @@ export const fn = (a, b, c) => {
   console.log(totalPrice);
   return totalPrice;
 };
+
+fn(3, 3, 0);
