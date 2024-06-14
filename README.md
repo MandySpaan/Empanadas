@@ -1,6 +1,7 @@
-# Assignment
+## Assignment 📝
 
-The goal of this project was to calculate how to achieve the best deal for an empanada promotion. The following factors had to be taken into consideration:
+The goal of this project was to calculate how to achieve the best deal for an empanada promotion. <br>
+The following factors had to be taken into consideration:
 
 - Promotion: get 3, pay only 1
 - The 1 to be paid is the most expensive of a group of 3
@@ -19,9 +20,20 @@ The goal of this project was to calculate how to achieve the best deal for an em
 
 You can find the full assignment (in Spanish) in the file [assignment.md](assignment.md).
 
-The following repository was cloned to be used a starting point: [the Empanada Challenge](https://github.com/GeeksHubsAcademy/javascript-empanadas-challenge). This repository includes the following initial files:
+The following repository was cloned to be used a starting point: [the Empanada Challenge](https://github.com/GeeksHubsAcademy/javascript-empanadas-challenge).<br>
+This repository includes the following initial files:
 
 - A main.js file with an empty function that takes 3 parameters (a, b, c)
   - These parameters represent the quantity of empanadas <br>
     (a) respresents priced at €12, (b) at €14 and (c) at €16
 - A main.test.js file that holds the tests that need to be completed
+
+## My thought process 💭
+
+The overall idea of how to get to the desired result:
+
+- Step 1: Translate the given input properties <i>(a, b, c)</i> into an array of items, where each item represents an empanada named as it's own price: <i>arrayEmpanadas</i>.
+- Step 2: Take <i>arrayEmpanadas</i> with the original prices and calculate the possible combinations to get to a new outcome of price per empanada. The new price per empanada has to turn the highest prices as low as possible. Then place these new prices into a new array: <i>combinedPrices</i>.
+- Step 3: Take the array <i>combinedPrices</i> and organize the order of its content (new price per empanada) from highest to lowest.
+- Step 4: From this now organized array <i>combinedPrices</i>, select chronologically every first of groups of three, and put this into a new array: <i>toBePaid</i>. This array now includes all the empanadas that have to be paid.
+- Step 5: Add all the items from the <i>toBePaid</i> together to come to the final price.
