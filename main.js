@@ -8,6 +8,7 @@ export const fn = (a, b, c) => {
   if (a + b + c >= 40) {
     throw new Error("The total sum of the inputs has to be less than 40");
   }
+
   console.log("Turn parameters into an array of individual prices:");
 
   let arrayEmpanadas = [];
@@ -29,7 +30,7 @@ export const fn = (a, b, c) => {
   console.log(arrayEmpanadas);
 
   console.log(
-    "Individual prices combined to get to cheapest prices per empanada"
+    "Individual prices combined to get to best combination prices per empanada:"
   );
 
   let combinedPrices = [];
@@ -48,12 +49,12 @@ export const fn = (a, b, c) => {
   }
   console.log(combinedPrices);
 
-  console.log("array of cheapest prices from high to low");
+  console.log("Array of best combination prices from high to low:");
   combinedPrices.sort();
   combinedPrices.reverse();
   console.log(combinedPrices);
 
-  console.log("The empanadas that have to be paid");
+  console.log("The empanadas that have to be paid:");
   let toBePaid = [];
   for (let i = 0; i < combinedPrices.length; i++) {
     if (i % 3 === 0) {
@@ -70,3 +71,5 @@ export const fn = (a, b, c) => {
   console.log(totalPrice);
   return totalPrice;
 };
+
+fn(3, 2, 1);
