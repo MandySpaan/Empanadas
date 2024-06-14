@@ -70,5 +70,3 @@ export const fn = (a, b, c) => {
   console.log(totalPrice);
   return totalPrice;
 };
-
-fn(3, 3, 0);
