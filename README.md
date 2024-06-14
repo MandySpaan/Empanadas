@@ -1,7 +1,18 @@
+# Empanada Challenge
+
+This project was made as part of a course Full Stack Developer for GeeksHubs Academy.
+
+## Index 🔍
+
+- [Assignment](#assignment-)
+- [My Thought Process](#my-thought-process-)
+- [How to Use](#how-to-use-️)
+- [Notes on JS Code](#notes-on-js-code-)
+- [Points of Improvement](#points-of-improvement-)
+
 ## Assignment 📝
 
-The goal of this project was to calculate how to achieve the best deal for an empanada promotion. <br>
-The following factors had to be taken into consideration:
+The goal of this project was to use JavaScript to calculate how to achieve the best deal for an empanada promotion. The following factors had to be taken into consideration:
 
 - Promotion: get 3, pay only 1
 - The 1 to be paid is the most expensive of a group of 3
@@ -19,6 +30,8 @@ The following factors had to be taken into consideration:
       price (and thus the best deal) became €14 instead of €16.
 
 You can find the full assignment (in Spanish) in the file [assignment.md](assignment.md).
+
+---
 
 The following repository was cloned to be used a starting point: [the Empanada Challenge](https://github.com/GeeksHubsAcademy/javascript-empanadas-challenge).<br>
 This repository includes the following initial files:
@@ -38,9 +51,60 @@ The overall idea of how to get to the desired result:
 - Step 4: From this now organized array <i>combinedPrices</i>, select chronologically every first of groups of three, and put this into a new array: <i>toBePaid</i>. This array now includes all the empanadas that have to be paid.
 - Step 5: Add all the items from the <i>toBePaid</i> together to come to the final price.
 
+## How to Use ⚙️
+
+### Installation
+
+To set up the project, follow these steps:
+
+1. Clone the repository:
+
+```sh
+git clone https://github.com/your-username/empanadas-challenge.git
+cd empanadas-challenge
+```
+
+2. Install the dependencies:
+
+```sh
+npm install
+```
+
+### Usage
+
+To use the function `fn`, you need to import it and call it with the required parameters. The function parameters are:
+
+- `a`: Number of empanadas of type 1 (costs 12 each)
+- `b`: Number of empanadas of type 2 (costs 14 each)
+- `c`: Number of empanadas of type 3 (costs 16 each)
+
+The function will calculate the optimal total price based on the following conditions:
+
+1. No input value can be negative.
+2. The sum of the inputs must be a multiple of 3.
+3. The sum of the inputs must be less than 40.
+
+### Running the Project
+
+To run the project and see the output:
+
+```sh
+npm start
+```
+
+### Running Tests
+
+The project includes a comprehensive set of test cases to ensure the function works correctly. We use Vitest for testing.
+
+To run the tests, use the following command:
+
+```sh
+npm test
+```
+
 ## Notes on JS Code 💻
 
-For the sake of better understanding of how the code gets to the final result, I have added console logs at all steps earlier mentioned in [My Thought Process 💭](#my-thought-process-).
+For the sake of better understanding of how the code gets to the final result, I have added console logs at all steps earlier mentioned in [My Thought Process](#my-thought-process-).
 
 ### Some parts of the code singled out with explanation
 
