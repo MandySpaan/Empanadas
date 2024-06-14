@@ -56,6 +56,7 @@ export const fn = (a, b, c) => {
 
   console.log("The empanadas that have to be paid:");
   let toBePaid = [];
+
   for (let i = 0; i < combinedPrices.length; i++) {
     if (i % 3 === 0) {
       toBePaid.push(combinedPrices[i]);

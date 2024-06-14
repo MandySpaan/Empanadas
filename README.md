@@ -44,9 +44,11 @@ For the sake of better understanding of how the code gets to the final result, I
 
 ### Some parts of the code singled out with explanation
 
-To get from <i>arrayEmpanadas</i> to the array <i>combinedPrices</i>, I've made use of a while loop:
+To get from the array <i>arrayEmpanadas</i> to the array <i>combinedPrices</i>, I've made use of a while loop:
 
 ```javascript
+let combinedPrices = [];
+
 while (arrayEmpanadas.length / 2 >= 1) {
   var newPrice = (arrayEmpanadas.at(0) + arrayEmpanadas.at(-1)) / 2;
   combinedPrices.push(newPrice, newPrice);
@@ -55,7 +57,8 @@ while (arrayEmpanadas.length / 2 >= 1) {
 }
 ```
 
-As long as there were 2 items (empanadas) left in the original array <i>arrayEmpanadas</i>, I would take the first item (lowest price) and last item (highest price) and divide them through 2 to get to a new price saved in var <i>newPrice</i>. Then <i>newPrice</i> would get pushed twice into the new array <i>combinedPrices</i>. And the first and last item of the old array <i>arrayEmpanadas</i> would get deleted using shift and pop.
+I started with declaring a new let <i>CombinedPrices</i> an empty array.
+Then, while there are 2 items (empanadas) left in the original array <i>arrayEmpanadas</i>, I would take the first item (lowest price) and last item (highest price) and divide them through 2 to get to a new price saved in var <i>newPrice</i>. Then <i>newPrice</i> would get pushed twice into the new array <i>combinedPrices</i>. And the first and last item of the old array <i>arrayEmpanadas</i> would get deleted using shift and pop.
 
 After this I added an if statement, in case of the total number of items (empanadas) being uneven:
 
@@ -70,3 +73,17 @@ if (arrayEmpanadas.length === 1) {
 This makes sure that if there is only 1 item (empanada) left, even though this item can not be combined, it does get added to the new array <i>combinedPrices</i>.
 
 ---
+
+To get from the array <i>combinedPrices</i> to the array <i>toBePaid</i>, I've made use of a for loop:
+
+```javascript
+let toBePaid = [];
+
+for (let i = 0; i < combinedPrices.length; i++) {
+  if (i % 3 === 0) {
+    toBePaid.push(combinedPrices[i]);
+  }
+}
+```
+
+I started with declaring a new let <i>toBePaid</i> an empty array. Then, I wanted to select only the first of every three items (empenadas) chronologically. This is done by using an if statement inside a for loop, where <i>i</i> is used to represent the index number of <i>combinedPrices</i> . The desired selected item (empanadas) then get pushed into the new array <i>toBePaid</i>.
