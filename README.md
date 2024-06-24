@@ -60,8 +60,8 @@ To set up the project, follow these steps:
 1. Clone the repository:
 
 ```sh
-git clone https://github.com/your-username/empanadas-challenge.git
-cd empanadas-challenge
+git clone https://github.com/MandySpaan/GH_P3_LogicJS.git
+cd GH_P3_LogicJS
 ```
 
 2. Install the dependencies:
